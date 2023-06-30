@@ -3,6 +3,7 @@
 Git add adds a file to the tracking of git. if a file is not added, it will not be staged for a commit
 git add takes modified file in working directory and places modified version in staging area
 
+<<<<<<< HEAD
 Git add is a multipurpose command: it tracks new files, stages files, and marks merge-conflicted files as resolved.
 
 Can also be thought of as "add this content to the next commit" instead of "add files to project" because you use git add on files that have already been git added
@@ -90,3 +91,8 @@ Adding a new file will show as an untracked file, which makes sense since git ha
 
 
 new new stuff
+=======
+Some description!
+
+## Something New
+>>>>>>> d6390b9 (hello)
