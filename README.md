@@ -7,7 +7,14 @@ Git add is a multipurpose command: it tracks new files, stages files, and marks 
 
 Can also be thought of as "add this content to the next commit" instead of "add files to project" because you use git add on files that have already been git added
 
-## Git commit
+## Git [-a] [-m] commit
+commit records the snapshot you set up in your staging area
+
+adding -a will skip the staging area requirement, essentially adding and committing at the same time
+
+## Git rm [-f] <filename>
+Git rm will need to be removed from staging area and then committed
+git rm does that and removes the file from your working directory so you dont see it as untracked
 
 ## Git Push
 Pushes your changes to remote repository
@@ -30,6 +37,7 @@ shows the current status, what files are tracked/need to be committed
 
 ## git diff <branch>
 shows the difference in branches between the current branch and the specified branch
+git diff by itself will show unstaged changes in your current branch, basically the difference between the branch and itself
 
 ## git log
 gives log of commits in reverse chrono order. shows hashes which can be used to specify which branch
