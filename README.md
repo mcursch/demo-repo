@@ -1,7 +1,13 @@
 # Git commands and their meaning 
 ## Git Add
 Git add adds a file to the tracking of git. if a file is not added, it will not be staged for a commit
+git add takes modified file in working directory and places modified version in staging area
 
+Git add is a multipurpose command: it tracks new files, stages files, and marks merge-conflicted files as resolved.
+
+Can also be thought of as "add this content to the next commit" instead of "add files to project" because you use git add on files that have already been git added
+
+## Git commit
 
 ## Git Push
 Pushes your changes to remote repository
@@ -16,10 +22,8 @@ sets HEAD to point n commits backwards. Doing n=1 will set back 1 commit, effect
 ## git reset <hash>
 put the has of a git logged ommit in here in order to go back to that commit
 
-
 ## git reset <hash> --hard
 completely go back and get rid of all changes instead of just unstaging them
-
 
 ## git status
 shows the current status, what files are tracked/need to be committed
@@ -67,3 +71,11 @@ go to main, call rebase again
 finds common point of both, m3, saves changes, which is none here, then goes to feature and adds changes to master, f1->f2 here, then adds master changes (none)
 
 now master is m1->m2->m3->f1->f2
+
+## Tracked vs Untracked Files
+tracked files are files in the last snapshot, as well as any newly staged files. They can be unmodified, modified, or staged
+Tracked files are files Git knows about
+
+Untracked files are everything esle. all files not in last snapshot and not in your staging area.
+
+Adding a new file will show as an untracked file, which makes sense since git has no knowledge of that file
