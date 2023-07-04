@@ -87,3 +87,6 @@ Tracked files are files Git knows about
 Untracked files are everything esle. all files not in last snapshot and not in your staging area.
 
 Adding a new file will show as an untracked file, which makes sense since git has no knowledge of that file
+
+
+new new stuff
